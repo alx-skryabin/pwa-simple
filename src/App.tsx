@@ -1,19 +1,13 @@
-import React, {useState} from 'react'
-import {Button} from 'antd'
+import React from 'react'
+import CountButton from './components/CountButton'
 import './App.scss'
 
 function App() {
-  let [count, setCount] = useState<number>(0)
-
   return (
     <div className="as__app">
-      <h2>PWA!</h2>
+      <h2>PWA</h2>
 
-      <Button onClick={() => {
-        setCount(count += 2)
-      }}>
-        Hello {count}
-      </Button>
+      <CountButton/>
     </div>
   );
 }
